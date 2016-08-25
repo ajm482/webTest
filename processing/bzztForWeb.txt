@@ -2,8 +2,8 @@ Bzzt b;
 int clean, cleanCounter;
 
 void setup() {
-  //size( $(window).width(), $(window).height() );
-  size(640, 320);
+  size( $(window).width(), $(window).height() );
+  //size(640, 320);
   background(0, 179, 254);
   noStroke();
 
@@ -59,7 +59,8 @@ class Bzzt {
     maxSize = random(50, width/2);
 
     //startColor = color(255, 136, 0);
-    startColor = color(random(255), random(255), random(255));
+    //startColor = color(random(255), random(255), random(255));
+    startColor = color(255, 205, 30);
     endColor = color(0, 179, 254);
     colorSteps = 100;
     rColorDiff = red(startColor) - red(endColor);
