@@ -2,7 +2,7 @@ Bzzt b;
 int clean, cleanCounter;
 
 void setup() {
-  size( $(window).width(), $(window).height() );
+  size( $(window).width()/2, $(window).height()/2 );
   //size(640, 320);
   background(0, 179, 254);
   noStroke();
