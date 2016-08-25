@@ -56,11 +56,11 @@ class Bzzt {
     growth = 0;
     growthRate = random(.1, .5);
     size = r;
-    maxSize = random(50, width/2);
+    maxSize = random(50, width/2 - 50);  // Subtracting 50 as max rad for testing
 
     //startColor = color(255, 136, 0);
     //startColor = color(random(255), random(255), random(255));
-    startColor = color(255, 205, 30);
+    startColor = color(255, 30, 200);
     endColor = color(0, 179, 254);
     colorSteps = 100;
     rColorDiff = red(startColor) - red(endColor);
@@ -112,7 +112,6 @@ class Bzzt {
     angle += rotRate;
 
     /* Travel direction */
-    //if (dist >= height/2 - size/2) {
     if (dist >= maxSize) {
       out = false;
     }
